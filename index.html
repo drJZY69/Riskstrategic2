@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>حاسبة احتمالات RISK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>حاسبة احتمالات RISK</h1>
+    <p class="subtitle">
+      هذه الأداة تساعدك تتوقّع نتيجة الهجوم بين المهاجم والمدافع في لعبة Risk
+      عن طريق محاكاة عدد كبير من المعارك.
+    </p>
+
+    <form id="risk-form">
+      <div class="field">
+        <label for="attackerArmies">جيوش المهاجم 🔴</label>
+        <input type="number" id="attackerArmies" min="2" value="10" required>
+        <small>المهاجم لازم يكون عنده على الأقل جيشين (واحد ثابت في الإقليم وواحد يهاجم).</small>
+      </div>
+
+      <div class="field">
+        <label for="defenderArmies">جيوش المدافع 🔵</label>
+        <input type="number" id="defenderArmies" min="1" value="5" required>
+      </div>
+
+      <div class="field">
+        <label for="simulations">عدد المحاكاة (Simulation)</label>
+        <input type="number" id="simulations" min="100" max="100000" value="5000">
+        <small>كل ما زودت العدد، تصير النتيجة أدق بس تحسب أبطأ. 5000 إلى 20000 ممتاز.</small>
+      </div>
+
+      <button type="submit">احسب الاحتمالات</button>
+    </form>
+
+    <div id="result" class="result hidden"></div>
+
+    <div class="footer">
+      <p>⚠️ ملاحظة: الأداة لا تتصل باللعبة ولا تعدّل عليها؛ فقط تساعدك تحسب الاحتمالات وتخطط.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
