@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1c2451, #050814);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 24px 24px 16px;
+  border-radius: 18px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #d0d4ff;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #0b1020;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #6a8bff;
+  box-shadow: 0 0 0 1px #6a8bff55;
+}
+
+small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.75rem;
+  color: #a8b0ff;
+}
+
+button {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #ff4b5c, #ff9d3c);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.result {
+  margin-top: 18px;
+  padding: 12px 10px;
+  border-radius: 10px;
+  background: rgba(10, 15, 35, 0.9);
+  border: 1px solid #3f4fb8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.result strong {
+  color: #ffd76a;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: #98a0ff;
+  text-align: center;
+}
